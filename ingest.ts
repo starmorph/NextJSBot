@@ -3,7 +3,7 @@ import { OpenAIEmbeddings } from "langchain/embeddings";
 import { RecursiveCharacterTextSplitter } from "langchain/text_splitter";
 import { TextLoader } from "langchain/document_loaders";
 
-const FILENAME = "StripeAPI.md";
+const FILENAME = "NextAPI.md";
 
 export const run = async () => {
   const loader = new TextLoader(FILENAME);
