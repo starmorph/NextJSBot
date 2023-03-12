@@ -1,6 +1,6 @@
 # fly.toml file generated for navalmanac on 2023-03-05T23:11:37+03:00
 
-app = "navalmanac"
+app = "next13bot"
 kill_signal = "SIGINT"
 kill_timeout = 5
 processes = []

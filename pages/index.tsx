@@ -19,7 +19,7 @@ export default function Home() {
   const [loading, setLoading] = useState(false);
   const [messageState, setMessageState] = useState<{ messages: Message[], pending?: string, history: [string, string][] }>({
     messages: [{
-      "message": "Hi, I'm a Starmorph AI Asssistant. How can I help you?",
+      "message": "Hi, I'm a NextJS13 Docs AI Asssistant. How can I help you?",
       "type": "apiMessage"
     }],
     history: []
@@ -118,7 +118,7 @@ export default function Home() {
     <>
       <Head>
         {/* <!-- Primary Meta Tags --> */}
-        <title>Starmorph Langchain Chatbot</title>
+        <title>NextJs13 Unofficial Langchain Chatbot</title>
         <meta name="title" content="Starmorph Langchain Chatbot" />
         <meta name="description" content="starmorph AI chatbot built using Langchain Nextjs and OpenAI" />
 
@@ -227,7 +227,11 @@ export default function Home() {
             </form>
           </div>
           <div className = {styles.footer}>
-            <p> Built by <a href="https://starmorph.com" target="_blank" rel="noreferrer">
+            <p> Built on <a href="https://github.com/zahidkhawaja/langchain-chat-nextjs" target="_blank" rel="noreferrer">
+               Zahid's Langchain Chatbot
+              </a> <a href="https://github.com/progremir/navalmanac" target="_blank" rel="noreferrer">
+              Emir's Navalmanac
+              </a> Customized by <a href="https://starmorph.com" target="_blank" rel="noreferrer">
                Starmorph
               </a> </p>
           </div>
