@@ -19,7 +19,7 @@ export default function Home() {
   const [loading, setLoading] = useState(false);
   const [messageState, setMessageState] = useState<{ messages: Message[], pending?: string, history: [string, string][] }>({
     messages: [{
-      "message": "Hi, I'm a NextJS13 Docs AI Asssistant. How can I help you?",
+      "message": "Hi, I'm a  AI Asssistant trained on the Next13 Beta Docs. How can I help you?",
       "type": "apiMessage"
     }],
     history: []
@@ -119,19 +119,19 @@ export default function Home() {
       <Head>
         {/* <!-- Primary Meta Tags --> */}
         <title>NextJs13 Unofficial Langchain Chatbot</title>
-        <meta name="title" content="Starmorph Langchain Chatbot" />
-        <meta name="description" content="starmorph AI chatbot built using Langchain Nextjs and OpenAI" />
+        <meta name="title" content="UnOfficial Nextjs 13 Doc Bot" />
+        <meta name="description" content="AI chatbot built using Langchain Nextjs and OpenAI" />
 
         {/* <!-- Open Graph / Facebook --> */}
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Starmorph Langchain Chatbot" />
-        <meta property="og:description" content="starmorph AI chatbot built using Langchain Nextjs and OpenAI" />
+        <meta property="og:title" content="UnOfficial Nextjs 13 Doc Bot" />
+        <meta property="og:description" content="AI chatbot built using Langchain Nextjs and OpenAI" />
         <meta property="og:image" content="https://starmorph.com/starmorph-wide.png" />
 
         {/* <!-- Twitter --> */}
         <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:title" content="Starmorph Langchain Chatbot" />
-        <meta property="twitter:description" content="starmorph AI chatbot built using Langchain Nextjs and OpenAI" />
+        <meta property="twitter:title" content="UnOfficial Nextjs 13 Doc Bot" />
+        <meta property="twitter:description" content="AI chatbot built using Langchain Nextjs and OpenAI" />
         <meta property="twitter:image" content="https://starmorph.com/starmorph-wide.png" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
@@ -147,13 +147,6 @@ export default function Home() {
             rel="noreferrer"
           >
             Starmorph
-          </a>
-          <a
-            href="https://youtube.com/@starmorph"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Youtube
           </a>
         </div>
       </div>
@@ -220,7 +213,7 @@ export default function Home() {
                 ) : (
                   // Send icon SVG in input field
                   <svg viewBox='0 0 20 20' className={styles.svgicon} xmlns='http://www.w3.org/2000/svg'>
-                    <path d='M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z'></path>
+                    <path d='M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z'/>
                   </svg>
                 )}
               </button>
@@ -228,9 +221,9 @@ export default function Home() {
           </div>
           <div className = {styles.footer}>
             <p> Built on <a href="https://github.com/zahidkhawaja/langchain-chat-nextjs" target="_blank" rel="noreferrer">
-               Zahid's Langchain Chatbot
+               Zahids Langchain Chatbot
               </a> <a href="https://github.com/progremir/navalmanac" target="_blank" rel="noreferrer">
-              Emir's Navalmanac
+              Emirs Navalmanac
               </a> Customized by <a href="https://starmorph.com" target="_blank" rel="noreferrer">
                Starmorph
               </a> </p>
