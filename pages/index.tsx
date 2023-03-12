@@ -19,7 +19,7 @@ export default function Home() {
   const [loading, setLoading] = useState(false);
   const [messageState, setMessageState] = useState<{ messages: Message[], pending?: string, history: [string, string][] }>({
     messages: [{
-      "message": "Hi, I'm an AI assistant for the Almanac of Naval Ravikant. How can I help you?",
+      "message": "Hi, I'm a Starmorph AI Asssistant. How can I help you?",
       "type": "apiMessage"
     }],
     history: []
@@ -118,42 +118,42 @@ export default function Home() {
     <>
       <Head>
         {/* <!-- Primary Meta Tags --> */}
-        <title>Almanac of Naval Ravikant: Chatbot</title>
-        <meta name="title" content="Almanac of Naval Ravikant: Chatbot" />
-        <meta name="description" content="Learn from one of the greatest thinkers of our time. Get access to Naval's wisdom and insights on wealth, happiness, and success." />
+        <title>Starmorph Langchain Chatbot</title>
+        <meta name="title" content="Starmorph Langchain Chatbot" />
+        <meta name="description" content="starmorph AI chatbot built using Langchain Nextjs and OpenAI" />
 
         {/* <!-- Open Graph / Facebook --> */}
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Almanac of Naval Ravikant: Chatbot" />
-        <meta property="og:description" content="Learn from one of the greatest thinkers of our time. Get access to Naval's wisdom and insights on wealth, happiness, and success." />
-        <meta property="og:image" content="https://navalmanac.progremir.dev/og-image.svg" />
+        <meta property="og:title" content="Starmorph Langchain Chatbot" />
+        <meta property="og:description" content="starmorph AI chatbot built using Langchain Nextjs and OpenAI" />
+        <meta property="og:image" content="https://starmorph.com/starmorph-wide.png" />
 
         {/* <!-- Twitter --> */}
         <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:title" content="Almanac of Naval Ravikant: Chatbot" />
-        <meta property="twitter:description" content="Learn from one of the greatest thinkers of our time. Get access to Naval's wisdom and insights on wealth, happiness, and success." />
-        <meta property="twitter:image" content="https://navalmanac.progremir.dev/og-image.svg" />
+        <meta property="twitter:title" content="Starmorph Langchain Chatbot" />
+        <meta property="twitter:description" content="starmorph AI chatbot built using Langchain Nextjs and OpenAI" />
+        <meta property="twitter:image" content="https://starmorph.com/starmorph-wide.png" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className={styles.topnav}>
         <div>
-          <Link href="/"><h1 className={styles.navlogo}>Almanac of Naval Ravikant: Chatbot</h1></Link>
+          <Link href="/"><h1 className={styles.navlogo}>Starmorph Langchain Chatbot</h1></Link>
         </div>
         <div className = {styles.navlinks}>
           <a
-            href="https://www.navalmanack.com/"
+            href="https://starmorph.com"
             target="_blank"
             rel="noreferrer"
           >
-            Book
+            Starmorph
           </a>
           <a
-            href="https://github.com/progremir/navalmanac"
+            href="https://youtube.com/@starmorph"
             target="_blank"
             rel="noreferrer"
           >
-            GitHub
+            Youtube
           </a>
         </div>
       </div>
@@ -227,11 +227,9 @@ export default function Home() {
             </form>
           </div>
           <div className = {styles.footer}>
-            <p> Built by <a href="https://twitter.com/progremir" target="_blank" rel="noreferrer">
-                Emir Amanbekov
-              </a>. Not affiliated with <a href="https://www.navalmanack.com/" target="_blank" rel="noreferrer">
-                Almanac of Naval Ravikant
-              </a></p>
+            <p> Built by <a href="https://starmorph.com" target="_blank" rel="noreferrer">
+               Starmorph
+              </a> </p>
           </div>
         </div>
       </main>

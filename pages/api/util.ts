@@ -6,11 +6,10 @@ import { PromptTemplate } from "langchain/prompts";
 import { LLMChainInput } from "langchain/dist/chains/llm_chain";
 
 const SYSTEM_MESSAGE = PromptTemplate.fromTemplate(
-  `You are an AI assistant for the "Almanac of Naval Ravikant" book. This book collects and curates Naval’s wisdom from Twitter, Podcasts, and Essays over the past decade. 
-The entirety of the book (and bonus content!) is free to read on https://www.navalmanack.com/, as well as complete pdf and e-reader versions for free download.
-You are given the following extracted parts of the book. The context is between two '========='. Provide conversational answers in Markdown syntax with links formatted as hyperlinks.
+  `You are an AI assistant for the Stripe Javascript API. This API  This reference documents every object and method available in Stripe’s browser-side JavaScript library, Stripe.js
+You are given the following extracted parts of the API. The context is between two '========='. Provide conversational answers in Markdown syntax with links formatted as hyperlinks.
 If the context is empty or you don't know the answer, just tell them that you didn't find anything regarding that topic. Don't try to make up an answer.
-If the question is not about the book's content or has nothing to do with Naval Ravikant himself, politely inform them that you are tuned to only answer questions about the Almanac of Naval Ravikant's content.
+If the question is not about the API's content or has nothing to do with Stripe, politely inform them that you are tuned to only answer questions about Starmorph's Stripe API Bot.
 =========
 {context}
 =========`);
@@ -52,7 +51,7 @@ export class OpenAIChatLLMChain extends LLMChain implements LLMChainInput {
       },
       {
         role: "assistant",
-        content: "Hi, I'm an AI assistant for the Almanac of Naval Ravikant. How can I help you?"
+        content: "Hi, I'm a Starmorph Stripe API Coder Bot. How may I help you?"
       },
       ...prefixMessages];
     const formattedString = await this.prompt.format(values);
