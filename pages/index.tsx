@@ -19,7 +19,7 @@ export default function Home() {
   const [loading, setLoading] = useState(false);
   const [messageState, setMessageState] = useState<{ messages: Message[], pending?: string, history: [string, string][] }>({
     messages: [{
-      "message": "Hi, I'm a  AI Asssistant trained on the Next13 Beta Docs. How can I help you?",
+      "message": "Hi, I'm a  AI Assistant trained on the Next13 Beta Docs. How can I help you?",
       "type": "apiMessage"
     }],
     history: []
