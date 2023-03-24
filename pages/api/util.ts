@@ -112,6 +112,9 @@ export const makeChain = (vectorstore: HNSWLib, onTokenStream?: (token: string) 
       callbackManager: {
         handleNewToken: onTokenStream,
       }
+    },
+    {
+      basePath: "https://oai.hconeai.com/v1",
     }),
     { prompt: QA_PROMPT },
   );
